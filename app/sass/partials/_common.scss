@@ -1,0 +1,185 @@
+//clearing the float
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.clear * {
+  zoom: 1;
+}
+
+// dropdown
+.dropdown{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  &>a{
+    display: inline-block;
+    border: 1px solid $gainsboro;
+    @include border-radius(5px);
+    background-color: $white;
+    font-size: 14px;
+    color: $midnight;
+    padding: 10px;
+    padding-right: 23px;
+    height: 39px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    @include white-space(nowrap);
+    @include text-overflow(ellipsis);
+    &:after{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 5px;
+      background-image: url('../images/icon-dropdown.svg');
+      background-size: 8px 5px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 17px;
+      right: 10px;
+    }
+  }
+  &>div{
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: $white;
+    border: 1px solid $gainsboro;
+    padding: 5px 0;
+    display: none;
+    @include border-radius(5px);
+    input{
+      font-size: 12px;
+      font-weight: 400;
+      color: $midnight;
+      width: calc(100% - 20px);
+      margin: 5px 10px 0;
+      border: 0;
+      border-bottom: 1px solid $gainsboro;
+      padding-bottom: 3px;
+      background-color: $white;
+    }
+    ul{
+      max-height: 110px;
+      overflow-y: auto;
+      li{
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $midnight;
+        cursor: pointer;
+        background-position: top 9px right 10px;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        @include transition(all 0.3s linear);
+        &:hover{
+          background-color: $ghost-white;
+        }
+        &.selected{
+          background-image: url('../images/icon-check-circle.svg');
+        }
+      }
+    }
+
+  }
+  &.open{
+    &>a{
+      &:after{
+        background-image: url('../images/icon-dropdown-open.svg');
+      }
+    }
+    &>div{
+      display: block;
+    }
+  }
+  &-search{
+    position: relative;
+    ul{
+      display: none;
+      position: absolute;
+      top: calc(100% + 2px);
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: $white;
+      border: 1px solid $gainsboro;
+      padding: 5px 0;
+      max-height: 110px;
+      overflow-y: auto;
+      @include border-radius(5px);
+      li{
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        color: $midnight;
+        cursor: pointer;
+        background-position: top 9px right 10px;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        @include transition(all 0.3s linear);
+        &:hover{
+          background-color: $ghost-white;
+        }
+        &.selected{
+          background-image: url('../images/icon-check-circle.svg');
+        }
+      }
+    }
+    &.open{
+      &>a{
+        &:after{
+          background-image: url('../images/icon-dropdown-open.svg');
+        }
+      }
+      &>ul{
+        display: block;
+      }
+    }
+  }
+}
+
+// hiding scrollbar
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+// no access
+.no-access{
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+// overlay
+.bg-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background-color: rgba($midnight, 0.75);
+  display: none;
+}
+
+// display classes
+.block{
+  display: block;
+}
+.inline-block{
+  display: inline-block;
+}
+.none{
+  display: none;
+}

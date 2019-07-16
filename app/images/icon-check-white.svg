@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="6px" viewBox="0 0 8 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-check-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.71874352,8.85937534 L2.10937474,6.26563152 C2.03645817,6.19271495 2,6.09896517 2,5.98438219 C2,5.86979921 2.03645817,5.77604943 2.10937474,5.70313286 L2.68749836,5.1406342 C2.76041493,5.05730115 2.85156047,5.0156345 2.96093521,5.0156345 C3.07030995,5.0156345 3.16666396,5.05730115 3.24999702,5.1406342 L4.99999285,6.89063003 L8.74998391,3.14063897 C8.83331696,3.05730591 8.92967098,3.01563927 9.03904572,3.01563927 C9.14842046,3.01563927 9.23956599,3.05730591 9.31248257,3.14063897 L9.89060619,3.70313763 C9.96352276,3.7760542 9.99998093,3.86980398 9.99998093,3.98438696 C9.99998093,4.09896994 9.96352276,4.19271972 9.89060619,4.26563629 L5.28124218,8.85937534 C5.2083256,8.94270839 5.11457583,8.98437504 4.99999285,8.98437504 C4.88540987,8.98437504 4.79166009,8.94270839 4.71874352,8.85937534 Z" id="path-1"></path>
+    </defs>
+    <g id="Details---business-hours" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-92.000000, -450.000000)" id="Aside-content">
+            <g transform="translate(70.000000, 70.000000)">
+                <g id="Hours" transform="translate(20.000000, 212.000000)">
+                    <g id="Thu" transform="translate(0.000000, 150.000000)">
+                        <g id="day" transform="translate(0.000000, 11.000000)">
+                            <g id="checked" transform="translate(0.000000, 4.000000)">
+                                <g id="icon-check-white">
+                                    <use fill="#2B333D" xlink:href="#path-1"></use>
+                                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

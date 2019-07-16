@@ -1,0 +1,93 @@
+button{
+    border: 1px solid rgba($midnight, 0.1);
+    background-color: $white;
+    font-size: 14px;
+    color: $midnight;
+    text-align: center;
+    cursor: pointer;
+    @include border-radius(5px);
+    &.btn-save, &.btn-search, &.btn-fetch, &.btn-yes, &.btn-submit{
+        background-color: $royal-blue;
+        color: $white;
+        border-color: $royal-blue;
+    }
+}
+.btn{
+    &-toggle{
+        display: inline-block;
+        vertical-align: middle;
+        width: 40px;
+        height: 20px;
+        border: 1px solid $gainsboro;
+        @include border-radius(100px);
+        background-color: $white;
+        @include transition(all 0.3s linear);
+        position: relative;
+        cursor: pointer;
+        &:before{
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-color: $gainsboro;
+            @include border-radius(100%);
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            @include transition(all 0.3s linear);
+        }
+        &.on{
+            background-color: $de-york;
+            border-color: $de-york;
+            &:before{
+                left: 23px;
+                background-color: $white;
+            }
+        }
+    }
+    &-radio{
+        display: inline-block;
+        vertical-align: middle;
+        width: 14px;
+        height: 14px;
+        padding: 2px;
+        cursor: pointer;
+        background-color: $white;
+        border: 1px solid $gainsboro;
+        @include border-radius(100%);
+        &.on{
+            border-color: $de-york;
+            background-color: $de-york;
+            @include clip(content-box);
+            @include transition(all 0.3s linear);
+        }
+    }
+}
+.check-box{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    cursor: pointer;
+    background-color: $white;
+    border: 1px solid $gainsboro;
+    @include border-radius(3px);
+    &.checked{
+        border-color: $de-york;
+        background-color: $de-york;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../images/icon-check-white.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 11px auto;
+        }
+    }
+}

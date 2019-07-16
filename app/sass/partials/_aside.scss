@@ -1,0 +1,126 @@
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: $midnight;
+  z-index: 1;
+  @include border-radius(0 5px 5px 0);
+  .fc-logo {
+    width: 70px;
+    height: 70px;
+    display: block;
+    cursor: default;
+    border-bottom: 1px solid $black-pearl;
+    background-image: url("../images/FC-logo.svg");
+    background-size: 40px 43px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  & > ul {
+    & > li {
+      height: 60px;
+      width: 70px;
+      a {
+        width: 70px;
+        height: 60px;
+        display: block;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.6;
+        @include transition(all 0.2s linear);
+        &:hover {
+          background-color: rgba($white, 0.1);
+        }
+        &.selected {
+          opacity: 1;
+          background-color: $black-pearl;
+        }
+      }
+    }
+    &.bottom-menu {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      li {
+        position: relative;
+        .peers-count {
+          display: block;
+          position: absolute;
+          bottom: 14px;
+          left: 38px;
+          background-color: $royal-blue;
+          padding: 0 4px;
+          color: $white;
+          font-size: 12px;
+          font-weight: 500;
+          cursor: pointer;
+          pointer-events: none;
+          @include border-radius(4px);
+        }
+        .bottom-menu-options {
+          display: none;
+          position: absolute;
+          bottom: 10px;
+          left: 100%;
+          z-index: 1;
+          width: 250px;
+          background-color: $white;
+          @include border-radius(5px);
+          @include box-shadow(0 0 8px 0 rgba($midnight, 0.2));
+          ul {
+            max-height: 275px;
+            overflow-y: auto;
+            li {
+              padding: 10px 20px;
+              cursor: pointer;
+              font-size: 0;
+              img {
+                display: inline-block;
+                vertical-align: middle;
+                width: 30px;
+                height: 30px;
+                @include border-radius(100%);
+                margin-right: 5px;
+              }
+              div {
+                display: inline-block;
+                vertical-align: middle;
+                color: $midnight;
+                h4 {
+                  font-weight: 500;
+                }
+                p {
+                  font-size: 10px;
+                }
+              }
+              i {
+                float: right;
+                width: 14px;
+                height: 14px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 14px auto;
+                margin-top: 8px;
+              }
+              &:hover {
+                background-color: $ghost-white;
+              }
+            }
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            bottom: 10px;
+            border-right: 8px solid $white;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+          }
+        }
+      }
+    }
+  }
+}

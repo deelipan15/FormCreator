@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-decision-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Forms---field-settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Expanded" transform="translate(-310.000000, -1752.000000)" fill="#2B333D">
+            <g id="Forms-list-Copy-29" transform="translate(20.000000, 1620.000000)">
+                <g id="Group-4-Copy" transform="translate(0.000000, 74.000000)">
+                    <g id="Group-3" transform="translate(290.000000, 29.000000)">
+                        <g id="icon-decision-arrow" transform="translate(0.000000, 29.000000)">
+                            <polygon id="Line-Copy" fill-rule="nonzero" points="19.5 6 19.5 8 1.5 8 1.5 6"></polygon>
+                            <path d="M7.24409449,13.9049774 C7.18110236,13.9683258 7.0971127,14 6.99212598,14 C6.88713927,14 6.79265108,13.9683258 6.70866142,13.9049774 L0.125984252,7.25339367 C0.0419945905,7.19004525 0,7.10558053 0,7 C0,6.89441947 0.0419945905,6.80995475 0.125984252,6.74660633 L6.70866142,0.0950226244 C6.79265108,0.0316742081 6.88713927,0 6.99212598,0 C7.0971127,0 7.18110236,0.0316742081 7.24409449,0.0950226244 L7.87401575,0.728506787 C7.95800541,0.791855204 8,0.87631992 8,0.981900452 C8,1.08748099 7.95800541,1.18250361 7.87401575,1.26696833 L2.17322835,7 L7.87401575,12.7330317 C7.95800541,12.8174964 8,12.912519 8,13.0180995 C8,13.1236801 7.95800541,13.2081448 7.87401575,13.2714932 L7.24409449,13.9049774 Z" id=""></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

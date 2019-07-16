@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Form Creator 2019</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/main.css"
+    />
+    <!-- <script src="main.js"></script> -->
+  </head>
+  <body>
+    <main>
+      <header class="clear">
+        <img src="./images/brands/AnswerConnect-Logo.svg" alt="brand_logo" />
+        <div class="header-container-right">
+          <div>
+            <label>Company Name :</label>
+            <span>Full Creative Private Limited</span>
+          </div>
+          <div>
+            <label>Account :</label>
+            <div class="dropdown">
+              <a>0123456789</a>
+              <div>
+                <input type="text" placeholder="search" />
+                <ul>
+                  <li class="selected">0123456789</li>
+                  <li>1234567890</li>
+                  <li>0123456799</li>
+                  <li>0123456689</li>
+                  <li>0123487689</li>
+                  <li>5467456789</li>
+                  <li>1238456789</li>
+                  <li>0129956789</li>
+                  <li>0124596789</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="cta-fetch">Fetch</button>
+          </div>
+          <div class="options-header">
+            <a class="icon-search cta-search"></a>
+            <a class="icon-notifications cta-notification"></a>
+            <a class="icon-more-options cta-more-option"></a>
+          </div>
+        </div>
+      </header>
+      <aside>
+        <a class="fc-logo"></a>
+        <ul class="top-menu">
+          <li><a class="icon-forms selected"></a></li>
+          <li><a class="icon-scenarios"></a></li>
+          <li><a class="icon-staffs"></a></li>
+          <li><a class="icon-details"></a></li>
+        </ul>
+        <ul class="bottom-menu">
+          <li><a class="icon-feedbacks"></a></li>
+          <li>
+            <a
+              class="icon-external-links bottom_icon_list"
+              id="menuOptions_a"
+            ></a>
+            <div class="bottom-menu-options" id="menuOptions_div">
+              <ul>
+                <li class="clear">
+                  <img src="./images/sb-external.svg" alt="sb icon" />
+                  <div>
+                    <h4>Switch Board</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img src="./images/cwa-external.svg" alt="cwa icon" />
+                  <div>
+                    <h4>CWA</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img src="./images/ds-external.svg" alt="ds icon" />
+                  <div>
+                    <h4>Distributed Source</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img
+                    src="./images/workflow-external.svg"
+                    alt="workflow icon"
+                  />
+                  <div>
+                    <h4>Workflow</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img src="./images/am-external.svg" alt="am icon" />
+                  <div>
+                    <h4>Asset Manager</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img src="./images/fv-external.svg" alt="fv icon" />
+                  <div>
+                    <h4>Form Versions</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+                <li class="clear">
+                  <img src="./images/fl-external.svg" alt="fl icon" />
+                  <div>
+                    <h4>File Lookup</h4>
+                    <p>Description</p>
+                  </div>
+                  <i class="icon-link"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="icon-online-peers bottom_icon_list" id="peersCount_a"></a>
+            <span class="peers-count">4</span>
+            <div class="bottom-menu-options" id="peersCount_div">
+              <ul>
+                <li>
+                  <img src="./images/peers/DSC_1469.png" alt="peers pic" />
+                  <div>
+                    <h4>Deelipan Ravichandran</h4>
+                    <p>Viewing since 27/12/2018 05:40am</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/peers/DSC_1468.png" alt="peers pic" />
+                  <div>
+                    <h4>Maran Elangovan</h4>
+                    <p>Viewing since 05:40am</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/peers/DSC_1467.png" alt="peers pic" />
+                  <div>
+                    <h4>Raghavan Ramanujam</h4>
+                    <p>Viewing since 02:40pm</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <!-- container -->
+      <section class="container">
+        <!-- sub container -->
+        <section class="sub-container">
+          <!-- sub forms -->
+          <article class="sub-container-forms">
+            <!-- sub forms header -->
+            <div class="sub-container-header">
+              <ul>
+                <li class="selected cta-addFields"><h3>Add Fields</h3></li>
+                <li class="cta-fieldSettings"><h3>Field Settings</h3></li>
+                <li class="cta-formSettings"><h3>Form Settings</h3></li>
+              </ul>
+            </div>
+            <!-- end of sub forms header -->
+            <!-- sub forms content -->
+            <div class="sub-container-content">
+              <!-- add fields -->
+              <div class="add-field-container">
+                <div class="fields-group1">
+                  <div class="clear">
+                    <h3>Group 1</h3>
+                    <span class="icon-plus"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-field-name"></i>
+                      <p>Name</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-phone"></i>
+                      <p>Phone</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-email"></i>
+                      <p>Email</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-decision"></i>
+                      <p>Decision Tree</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-message"></i>
+                      <p>Message</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-script"></i>
+                      <p>Scripting</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-company"></i>
+                      <p>Company Name</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-website"></i>
+                      <p>Website</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-finish"></i>
+                      <p>Finish Call</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-single"></i>
+                      <p>Single Line Text</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-date"></i>
+                      <p>Date</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-city"></i>
+                      <p>City</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-oncall"></i>
+                      <p>On Call Schedule</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-transfer"></i>
+                      <p>Call Transfer</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-repeat"></i>
+                      <p>Set Repeat</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-dropdown"></i>
+                      <p>Dropdown</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-paragraph"></i>
+                      <p>Paragraph Text</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-instruction"></i>
+                      <p>Instruction</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-firstname"></i>
+                      <p>First Name</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-lastname"></i>
+                      <p>Last Name</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-state"></i>
+                      <p>State</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-postal"></i>
+                      <p>Zip/Postal code</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-address"></i>
+                      <p>Address 1</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-iframe"></i>
+                      <p>Iframe</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-appointment"></i>
+                      <p>Appointment</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-time"></i>
+                      <p>Time</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fields-group2">
+                  <div class="clear">
+                    <h3>Group 2</h3>
+                    <span class="icon-plus"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-field-country"></i>
+                      <p>Country</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-status"></i>
+                      <p>Customer Status</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-multiple"></i>
+                      <p>Multiple Select</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-hidden"></i>
+                      <p>Hidden Field</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-phone"></i>
+                      <p>Custome Phone</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-address"></i>
+                      <p>Address 2</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fields-user">
+                  <div class="clear">
+                    <h3>User Template</h3>
+                    <span class="icon-plus"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-field-appointment"></i>
+                      <p>Appointments (with cancel)</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-appointment"></i>
+                      <p>Appointments (No Rescheduling/Cancelling)</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-order"></i>
+                      <p>Order Taking</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-faq"></i>
+                      <p>FAQ's</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-department"></i>
+                      <p>Specific People or Department</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-webchat"></i>
+                      <p>Webchats</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-else"></i>
+                      <p>All Else</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-patch"></i>
+                      <p>Was the call successfully patched?</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-relay"></i>
+                      <p>Was the message LIVE relayed?</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fields-import-script">
+                  <div class="clear">
+                    <h3>Import Script Template</h3>
+                    <span class="icon-minus"></span>
+                  </div>
+                  <div class="import-account-form">
+                    <div class="clear">
+                      <input type="text" placeholder="Enter Account Number" />
+                      <button>Import</button>
+                    </div>
+                    <div class="clear">
+                      <label>Forms List</label>
+                      <div class="dropdown">
+                        <a>Select Form</a>
+                        <div>
+                          <ul>
+                            <li>Testing Form</li>
+                            <li>Deelipan's Testing Form</li>
+                            <li>Form 2</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul style="display: block;">
+                    <li>
+                      <i class="icon-field-form"></i>
+                      <p>Options</p>
+                    </li>
+                    <li>
+                      <i class="icon-field-form"></i>
+                      <p>Options 2</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="fields-data-sharing">
+                  <div class="clear">
+                    <h3>Data Sharing</h3>
+                    <span class="icon-plus"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <img
+                        src="./images/brands/wufoo_logo.png"
+                        alt="wufoo logo"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="fields-delivery-group">
+                  <div class="clear">
+                    <h3>Delivery Group</h3>
+                    <span class="icon-plus"></span>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="icon-plus"></i>
+                      <p>CWA_DM_1</p>
+                    </li>
+                    <li>
+                      <i class="icon-plus"></i>
+                      <p>CWA_DM_2</p>
+                    </li>
+                    <li>
+                      <i class="icon-plus"></i>
+                      <p>CWA_DM_3</p>
+                    </li>
+                    <li>
+                      <i class="icon-plus"></i>
+                      <p>Default</p>
+                    </li>
+                    <li>
+                      <i class="icon-plus"></i>
+                      <p>New</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end of add fields -->
+              <!-- field settings -->
+              <div class="field-settings-container">
+                <ul>
+                  <li class="clear">
+                    <label>Field Name</label>
+                    <h3>Name</h3>
+                  </li>
+                  <li class="clear">
+                    <label>Field Script</label>
+                    <textarea></textarea>
+                  </li>
+                  <li class="clear">
+                    <label>Required</label>
+                    <span class="btn-toggle on"></span>
+                  </li>
+                  <li class="clear">
+                    <label>Agent Verification</label>
+                    <ul>
+                      <li class="clear">
+                        <label>Agent verification configuration</label>
+                        <span class="btn-toggle"></span>
+                      </li>
+                      <li class="clear">
+                        <label>Set to all other similar fields</label>
+                        <span class="btn-toggle"></span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="clear no-access">
+                    <label>System Verification</label>
+                    <span class="btn-toggle on"></span>
+                  </li>
+                  <li class="clear">
+                    <label>Output Order</label>
+                    <div>
+                      <input type="text" />
+                      <button>Set All</button>
+                    </div>
+                  </li>
+                  <li class="clear">
+                    <label>Restricted Special Characters</label>
+                    <input type="text" />
+                  </li>
+                  <li class="clear">
+                    <label>Text Length</label>
+                    <input type="text" />
+                  </li>
+                  <li class="clear">
+                    <label>Available Calendars</label>
+                    <ul>
+                      <li class="clear">
+                        <label>Send</label>
+                        <span class="btn-toggle"></span>
+                      </li>
+                      <li class="clear">
+                        <label>Repeat</label>
+                        <span class="btn-toggle on"></span>
+                      </li>
+                      <li class="clear">
+                        <div>
+                          <span class="btn-radio"></span>
+                          <h4>5</h4>
+                        </div>
+                        <div>
+                          <span class="btn-radio on"></span>
+                          <h4>10</h4>
+                        </div>
+                        <div>
+                          <span class="btn-radio"></span>
+                          <h4>15</h4>
+                        </div>
+                        <div>
+                          <span class="btn-radio"></span>
+                          <h4>30</h4>
+                        </div>
+                        <div>
+                          <span class="btn-radio"></span>
+                          <input type="text" placeholder="Other" />
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="clear field-settings-calltransfer">
+                    <input type="text" placeholder="Search Contacts..." />
+                    <ul>
+                      <li>
+                        <div>
+                          <span class="check-box checked"></span>
+                          <h3>Indrakumar</h3>
+                        </div>
+                        <ul>
+                          <li>1212121212</li>
+                          <li class="selected">+911212121212</li>
+                          <li>+978671282781 | 82</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div>
+                          <span class="check-box"></span>
+                          <h3>Maran</h3>
+                        </div>
+                        <ul>
+                          <li>9988776655</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <div>
+                          <span class="check-box"></span>
+                          <h3>Deelipan</h3>
+                        </div>
+                        <ul>
+                          <li>3456123456</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="clear field-settings-dropdown">
+                    <label>Type</label>
+                    <div class="dropdown">
+                      <a>Warm Transfer</a>
+                      <div>
+                        <ul>
+                          <li>Live Transfer</li>
+                          <li>Hot Transfer</li>
+                          <li>Warm Transfer</li>
+                          <li>Cold Transfer</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="clear">
+                    <label>Choices Field</label>
+                    <div>
+                      <input type="text" />
+                      <div>
+                        <span class="icon-plus"></span>
+                        <span class="icon-trash"></span>
+                        <span class="icon-intersection"></span>
+                      </div>
+                    </div>
+                    <div>
+                      <input type="text" />
+                      <div>
+                        <span class="icon-plus"></span>
+                        <span class="icon-trash"></span>
+                        <span class="icon-intersection selected"></span>
+                      </div>
+                      <div class="custom-label-value">
+                        <input type="text" placeholder="Custom Label" />
+                        <input type="text" placeholder="Value" />
+                      </div>
+                    </div>
+                    <div class="decision-else">
+                      <span class="check-box checked"></span>
+                      <p>All Else</p>
+                      <input type="text" />
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end of field settings -->
+              <!-- form settings -->
+              <div class="form-settings-container">
+                <ul>
+                  <li class="clear">
+                    <label>Form Name</label>
+                    <i class="icon-download"></i>
+                    <input type="text" value="Deelipan's testing form" />
+                  </li>
+                  <li class="clear">
+                    <label>Lock message form</label>
+                    <span class="btn-toggle"></span>
+                  </li>
+                  <li class="clear">
+                    <label>Auto set output for Integrations/CSV</label>
+                    <span class="btn-toggle on"></span>
+                  </li>
+                  <li class="clear">
+                    <label>Auto set output order for messages</label>
+                    <span class="btn-toggle"></span>
+                  </li>
+                  <li class="clear sub-section">
+                    <label>Email Subject</label>
+                    <h4>
+                      Choose to configure the email subject to be send in email.
+                    </h4>
+                    <div>
+                      <h3>
+                        <span class="btn-radio on"></span>Static Email Subject
+                      </h3>
+                      <textarea></textarea>
+                    </div>
+                    <div>
+                      <h3>
+                        <span class="btn-radio"></span>Configurable Email
+                        Subject
+                      </h3>
+                      <div class="dropdown-search">
+                        <input type="text" placeholder="Search form field" />
+                        <ul>
+                          <li>Forms</li>
+                          <li>Reports</li>
+                          <li>Delivery Group</li>
+                          <li>Scripts</li>
+                          <li>Datas</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="clear sub-section">
+                    <label>Third Party Sync</label>
+                    <h4>
+                      Choose to configure the third party's to be sync with
+                      form.
+                    </h4>
+                    <div>
+                      <label>Configure Third party sync</label>
+                      <span class="btn-toggle on"></span>
+                    </div>
+                    <div class="third-party-link">
+                      <a href="">
+                        <img
+                          src="./images/brands/DistributedSource-Logo.svg"
+                          alt="Distributed Sources"
+                        />
+                        <i class="icon-third-party"></i>
+                      </a>
+                    </div>
+                    <div>
+                      <button>Add New Sync</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- end of form settings -->
+            </div>
+            <!-- end of sub forms content -->
+          </article>
+          <!-- end of sub forms -->
+        </section>
+        <!-- end of sub container -->
+        <!-- main container -->
+        <section class="main-container">
+          <!-- main container forms -->
+          <article class="forms-container">
+            <!-- forms header -->
+            <div class="forms-header">
+              <div>
+                <span class="icon-plus"></span>
+              </div>
+              <ul class="hide-scrollbar">
+                <li class="selected">
+                  <span class="form-publish"></span>
+                  <h3>Deelipan's testing form</h3>
+                  <i class="icon-trash"></i>
+                </li>
+                <li>
+                  <span class="form-unsave"></span>
+                  <h3>Form 2</h3>
+                  <i class="icon-trash"></i>
+                </li>
+                <li>
+                  <span class="form-holiday"></span>
+                  <h3>Testing form</h3>
+                  <i class="icon-trash"></i>
+                </li>
+              </ul>
+            </div>
+            <!-- end of forms header -->
+            <!-- forms tools -->
+            <div class="forms-tools clear">
+              <ul>
+                <li>
+                  <span class="icon-undo"></span>
+                  <span class="icon-redo"></span>
+                </li>
+                <li>
+                  <span class="icon-cut"></span>
+                  <span class="icon-copy"></span>
+                  <span class="icon-paste"></span>
+                  <span class="icon-trash"></span>
+                </li>
+                <li>
+                  <span class="icon-expand collapse"></span>
+                </li>
+                <li>
+                  <h3>Field Count : <span>40</span></h3>
+                </li>
+              </ul>
+              <div>
+                <button>Publish</button>
+                <button class="btn-save">Save</button>
+                <button>Discard</button>
+              </div>
+            </div>
+            <!-- end of forms tools -->
+            <!-- forms overlay -->
+            <div class="forms-overlay"></div>
+            <!-- end of forms overlay -->
+            <!-- forms content -->
+            <div class="forms-content">
+              <ul>
+                <li class="field-name selected">
+                  <div class="field-label">
+                    <label>Name</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-phone">
+                  <div class="field-label">
+                    <label>Phone</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" maxlength="3" />
+                    <div>
+                      <input type="text" />
+                      <input type="text" placeholder="Ext" />
+                    </div>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-email">
+                  <div class="field-label">
+                    <label>Email</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-message">
+                  <div class="field-label">
+                    <label>Message</label>
+                  </div>
+                  <div class="field-value">
+                    <textarea></textarea>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-script">
+                  <div class="field-label">
+                    <label>Scripting Field :</label>
+                  </div>
+                  <div class="field-value">
+                    <p>I’d be happy to help! May i ask who’s calling ?</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-paragraph">
+                  <div class="field-label">
+                    <label>Paragraph</label>
+                  </div>
+                  <div class="field-value">
+                    <textarea></textarea>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-instruction">
+                  <div class="field-label">
+                    <label>Instruction :</label>
+                  </div>
+                  <div class="field-value">
+                    <p>May I please have your number ?</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-company">
+                  <div class="field-label">
+                    <label>Company Name</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-website">
+                  <div class="field-label">
+                    <label>URL</label>
+                  </div>
+                  <div class="field-value">
+                    <i class="icon-url"></i>
+                    <p>https://staging.formcreator.full.io/index.jsp</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-finish-call">
+                  <div class="field-label">
+                    <label>Finish Call</label>
+                  </div>
+                  <div class="field-value">
+                    <p>Batch Send</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-single-line">
+                  <div class="field-label">
+                    <label>Single Line Text</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-first-name">
+                  <div class="field-label">
+                    <label>First Name</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-last-name">
+                  <div class="field-label">
+                    <label>Last Name</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-date">
+                  <div class="field-label">
+                    <label>Date</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                    <span>MM/DD/YY</span>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-city">
+                  <div class="field-label">
+                    <label>City</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-state">
+                  <div class="field-label">
+                    <label>State</label>
+                  </div>
+                  <div class="field-value">
+                    <div class="clear">
+                      <span>Choose an Option</span><i class="icon-dropdown"></i>
+                    </div>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-zip">
+                  <div class="field-label">
+                    <label>Zip / Postal Code</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-address1">
+                  <div class="field-label">
+                    <label>Address 1</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-iframe">
+                  <div class="field-label">
+                    <label>IFrame</label>
+                  </div>
+                  <div class="field-value">
+                    <i class="icon-url"></i>
+                    <p>https://teleport.video/form-creator</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-set-repeat">
+                  <div class="field-label">
+                    <label>Set Repeat</label>
+                  </div>
+                  <div class="field-value">
+                    <p>Repeat time 3:00AM</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-dropdown">
+                  <div class="field-label">
+                    <label>Dropdown</label>
+                  </div>
+                  <div class="field-value">
+                    <div class="clear">
+                      <span>Choose an Option</span><i class="icon-dropdown"></i>
+                    </div>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-transfer">
+                  <div class="field-label">
+                    <label>Warm Transfer :</label>
+                  </div>
+                  <div class="field-value">
+                    <p>
+                      Call Indrakumar <i class="icon-phone-blue"></i
+                      ><span>+911212121212</span>
+                    </p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-data-sharing">
+                  <div class="field-label">
+                    <img
+                      src="./images/brands/wufoo_logo.png"
+                      alt="wufoo logo"
+                    />
+                  </div>
+                  <div class="field-value">
+                    <i class="icon-url"></i>
+                    <p>https://wufoo.com</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-appointment">
+                  <div class="field-label">
+                    <label>Appointment</label>
+                  </div>
+                  <div class="field-value">
+                    <p></p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-time">
+                  <div class="field-label">
+                    <label>Time</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" maxlength="2" placeholder="HH" />
+                    <input type="text" maxlength="2" placeholder="MM" />
+                    <span>AM/PM</span>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-country">
+                  <div class="field-label">
+                    <label>Country</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-address2">
+                  <div class="field-label">
+                    <label>Address 2</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" />
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-custom-phone">
+                  <div class="field-label">
+                    <label>Phone</label>
+                  </div>
+                  <div class="field-value">
+                    <input type="text" maxlength="3" />
+                    <div>
+                      <input type="text" />
+                      <input type="text" placeholder="Ext" />
+                    </div>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-multiselect">
+                  <div class="field-label">
+                    <label>Dropdown</label>
+                  </div>
+                  <div class="field-value">
+                    <div class="clear">
+                      <span>Choose an Option</span><i class="icon-dropdown"></i>
+                    </div>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-hidden-field">
+                  <div class="field-label">
+                    <label>Hidden Field</label>
+                  </div>
+                  <div class="field-value">
+                    <p>Hidden Field value</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-delivery-method">
+                  <div class="field-label">
+                    <label>Delivery Method</label>
+                  </div>
+                  <div class="field-value">
+                    <p>CWA_DM_1</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-customer-status">
+                  <div class="field-label">
+                    <label>Customer Status :</label>
+                  </div>
+                  <div class="field-value">
+                    <p>Message expiry on 22March 2019</p>
+                  </div>
+                  <div class="field-drag-delete">
+                    <span class="icon-drag"></span>
+                    <span class="icon-trash"></span>
+                  </div>
+                </li>
+                <li class="field-decision-tree">
+                  <div class="decision-tree">
+                    <ul>
+                      <li class="decision-tree-head expanded">
+                        <span class="btn-decision"></span>
+                        <div class="selected">
+                          <p>Was the call transferred to Vishnu</p>
+                          <div class="field-drag-delete">
+                            <span class="icon-drag"></span>
+                            <span class="icon-trash"></span>
+                          </div>
+                        </div>
+                        <ul>
+                          <li class="decision-tree-head expanded">
+                            <span class="btn-decision"></span>
+                            <div>
+                              <p>Yes</p>
+                              <div class="field-drag-delete">
+                                <span class="icon-drag"></span>
+                                <span class="icon-trash"></span>
+                              </div>
+                            </div>
+                            <ul>
+                              <li class="field-oncall">
+                                <p>
+                                  On call Schedule<i class="icon-acc"></i
+                                  ><span>0123456789</span
+                                  ><i class="icon-calendar"></i
+                                  ><span>Default</span>
+                                </p>
+                                <div class="field-drag-delete">
+                                  <span class="icon-drag"></span>
+                                  <span class="icon-trash"></span>
+                                </div>
+                              </li>
+                              <li class="field-paragraph">
+                                <div class="field-label">
+                                  <label>Paragraph</label>
+                                </div>
+                                <div class="field-value">
+                                  <textarea></textarea>
+                                </div>
+                                <div class="field-drag-delete">
+                                  <span class="icon-drag"></span>
+                                  <span class="icon-trash"></span>
+                                </div>
+                              </li>
+                              <li class="field-instruction">
+                                <div class="field-label">
+                                  <label>Instruction :</label>
+                                </div>
+                                <div class="field-value">
+                                  <p>May I please have your number ?</p>
+                                </div>
+                                <div class="field-drag-delete">
+                                  <span class="icon-drag"></span>
+                                  <span class="icon-trash"></span>
+                                </div>
+                              </li>
+                              <li class="decision-tree-head expanded">
+                                <span class="btn-decision"></span>
+                                <div class="selected">
+                                  <p>Was the call transferred to Vishnu</p>
+                                  <div class="field-drag-delete">
+                                    <span class="icon-drag"></span>
+                                    <span class="icon-trash"></span>
+                                  </div>
+                                </div>
+                                <ul>
+                                  <li class="field-paragraph">
+                                    <div class="field-label">
+                                      <label>Paragraph</label>
+                                    </div>
+                                    <div class="field-value">
+                                      <textarea></textarea>
+                                    </div>
+                                    <div class="field-drag-delete">
+                                      <span class="icon-drag"></span>
+                                      <span class="icon-trash"></span>
+                                    </div>
+                                  </li>
+                                  <li class="field-instruction">
+                                    <div class="field-label">
+                                      <label>Instruction :</label>
+                                    </div>
+                                    <div class="field-value">
+                                      <p>May I please have your number ?</p>
+                                    </div>
+                                    <div class="field-drag-delete">
+                                      <span class="icon-drag"></span>
+                                      <span class="icon-trash"></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="decision-tree-head collapsed">
+                            <span class="btn-decision"></span>
+                            <div>
+                              <p>No</p>
+                              <div class="field-drag-delete">
+                                <span class="icon-drag"></span>
+                                <span class="icon-trash"></span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end of forms content -->
+          </article>
+          <!-- end of main container forms -->
+        </section>
+        <!-- end of main container -->
+      </section>
+      <!-- end of container -->
+      <!-- side content container -->
+      <!-- more optoins container -->
+      <section class="side-container more-options-container">
+        <div class="side-container-header clear">
+          <h2>Options</h2>
+          <i class="icon-close close-side-content"></i>
+        </div>
+        <div class="side-container-content">
+          <ul>
+            <li>Back to Playground</li>
+            <li>Clear Cache for <span>0123456789</span></li>
+            <li>Copy Message Template</li>
+            <li>Copy / Restore Message Forms</li>
+            <li>Scheduled Batch Messages</li>
+            <li>Scheduled Behaviour</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+      </section>
+      <!-- end of more options container -->
+      <!-- search container -->
+      <section class="side-container search-container">
+        <div class="side-container-header clear">
+          <h2>Search</h2>
+          <i class="icon-close close-side-content"></i>
+        </div>
+        <div class="side-container-content">
+          <!-- search layout -->
+          <div class="search-layout">
+            <input type="text" placeholder="Search" />
+            <div class="clear">
+              <h3>Category</h3>
+              <div class="dropdown">
+                <a>All</a>
+                <div>
+                  <ul>
+                    <li class="selected">All</li>
+                    <li>Forms</li>
+                    <li>Scenarios</li>
+                    <li>Staff</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="btn-search">Search</button>
+          </div>
+          <!-- end of search layout -->
+          <!-- search results -->
+          <ul>
+            <li>
+              <h3>Form Settings</h3>
+              <span class="view-search-result"></span>
+            </li>
+            <li>
+              <h3>Form</h3>
+              <span class="view-search-result"></span>
+            </li>
+            <li>
+              <h3>Why not call transferred?</h3>
+              <p>
+                [ Form ] Decision Tree > Option > Decision Tree > Option >
+                Decision Tree > Option > Decision Tree > No
+              </p>
+              <span class="view-search-result"></span>
+            </li>
+          </ul>
+          <!-- end of search results -->
+        </div>
+      </section>
+      <!-- end of search container -->
+      <!-- notification container -->
+      <section class="side-container notification-container">
+        <div class="side-container-header clear">
+          <a class="selected">All</a>
+          <a>Unread</a>
+          <a>Read</a>
+          <a class="search-notification"
+            >Search
+            <div>
+              <i class="icon-arrow-left cta-search-notify"></i>
+              <input type="text" placeholder="Type here to search" />
+            </div>
+          </a>
+          <i class="icon-close close-side-content"></i>
+        </div>
+        <div class="side-container-content">
+          <ul>
+            <li>
+              <h3>Sprint 20 Releases</h3>
+              <ul>
+                <li>
+                  <h4>Simple Bug Fixes</h4>
+                  <p>
+                    1. Scenarios after hours validation Save button color change
+                    is fixed.
+                  </p>
+                  <p>2. Custom holiday TO date manual edit is disabled.</p>
+                  <p>3. After hours role validation arrow change is fixed.</p>
+                  <p>4. On call schedules can be searched in Content Search.</p>
+                  <a>View more...</a>
+                </li>
+                <li>
+                  <h4>New Release details notification</h4>
+                  <p>
+                    This will show a notification for every new group added in
+                    the University. <a>View more...</a>
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="unread">Sprint 19 Releases</h3>
+            </li>
+            <li>
+              <h3>Sprint 18 Releases</h3>
+            </li>
+            <li>
+              <h3>Sprint 17 Releases</h3>
+            </li>
+            <li>
+              <h3 class="unread">Sprint 16 Releases</h3>
+            </li>
+            <li>
+              <h3 class="unread">Sprint 15 Releases</h3>
+            </li>
+            <li>
+              <h3>Sprint 14 Releases</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- end of notification container -->
+      <!-- end of side content container -->
+      <div class="bg-overlay"></div>
+      <!-- popup -->
+      <!-- popup fetch -->
+      <section class="popup-container popup-fetch">
+        <div class="popup-container-header clear">
+          <h2>Fetch Account</h2>
+          <i class="icon-close close-popup"></i>
+        </div>
+        <div class="popup-container-content">
+          <input type="text" placeholder="Enter the account number" />
+          <button class="btn-fetch">Fetch Account</button>
+        </div>
+      </section>
+      <!-- end of popup fetch -->
+      <!-- popup oncall calendar -->
+      <section class="popup-container popup-oncall-calendar">
+        <div class="popup-container-header clear">
+          <h2>Select Oncall Calendar</h2>
+          <i class="icon-close close-popup"></i>
+        </div>
+        <div class="popup-container-content">
+          <ul>
+            <li>
+              <span class="btn-radio"></span>
+              <p>Current Account Number</p>
+            </li>
+            <li>
+              <span class="btn-radio on"></span>
+              <p>Sub Accounts</p>
+            </li>
+          </ul>
+          <div class="dropdown-search">
+            <input type="text" placeholder="Search form field" />
+            <ul>
+              <li>0123455689</li>
+              <li>0123401789</li>
+              <li>0123996789</li>
+              <li>0155456789</li>
+              <li>0123456733</li>
+            </ul>
+          </div>
+          <div class="oncall-calendar-list">
+            <h3>Calendar List</h3>
+            <ul>
+              <li>
+                <span class="btn-radio on"></span>
+                <p>Calendar 1</p>
+              </li>
+              <li>
+                <span class="btn-radio"></span>
+                <p>Calendar 123</p>
+              </li>
+            </ul>
+          </div>
+          <div class="oncall-calendar-btn">
+            <button>Cancel</button>
+            <button class="btn-submit">Submit</button>
+          </div>
+        </div>
+      </section>
+      <!-- end of popup oncall calendar -->
+      <!-- end of popup -->
+      <!-- confirmation -->
+      <Section class="confirmation-container">
+        <div class="confirmation-container-header clear">
+          <h2>Confirmaton</h2>
+          <i class="icon-close close-confirm"></i>
+        </div>
+        <div class="confirmation-container-content">
+          <p>Do you want to delete the message form field ?</p>
+          <div>
+            <button>No</button>
+            <button class="btn-yes">Yes</button>
+          </div>
+        </div>
+      </Section>
+      <!-- end of confirmation -->
+      <!-- alerts -->
+      <div class="alert alert-success">
+        <p>
+          Lorem ipsum dolor sit amet, conse adipiscing elit. Curabitur luctus
+          mattis ornare.
+        </p>
+      </div>
+      <!-- end of alerts -->
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

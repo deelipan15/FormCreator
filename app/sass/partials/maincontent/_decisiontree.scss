@@ -1,0 +1,239 @@
+.decision-tree{
+    &>ul{
+        &>li{
+            padding-left: 30px;
+            position: relative;
+            .btn-decision{
+                width: 20px;
+                height: 20px;
+                border: 1px solid $gainsboro;
+                @include border-radius(100%);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: $white;
+                display: inline-block;
+                vertical-align: middle;
+                cursor: pointer;
+                position: absolute;
+                top: 5px;
+                left: 0;
+                background-image: url("../images/icon-plus.svg");
+                background-size: 9px 9px;
+            }
+            &>div{
+                padding: 5px 10px;
+                border: 1px dashed transparent;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                @include border-radius(5px);
+                @include transition(all 0.3s linear);
+                &:hover{
+                    background-color: $alice-blue;
+                }
+                // copied from scipt
+                .field{
+                    // field label
+                    &-label{
+                        width: 135px;
+                        padding-right: 10px;
+                        display: inline-block;
+                        vertical-align: top;
+                        label{
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: $midnight;
+                            display: inline-block;
+                            margin-top: 11px;
+                            pointer-events: none;
+                        }
+                    }
+                    // end of field label
+                    // field value
+                    &-value{
+                        width: calc(100% - 183px);
+                        display: inline-block;
+                        vertical-align: top;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $midnight;
+                        input{
+                            max-width: 100%;
+                            padding: 11px 10px 10px;
+                            height: 40px;
+                            background-color: $white;
+                            border: 1px solid rgba($midnight, 0.1);
+                            pointer-events: none;
+                            @include border-radius(5px);
+                        }
+                        textarea{
+                            max-width: 100%;
+                            padding: 11px 10px 10px;
+                            height: 60px;
+                            resize: none;
+                            background-color: $white;
+                            border: 1px solid rgba($midnight, 0.1);
+                            pointer-events: none;
+                            @include border-radius(5px);
+                        }
+                    }
+                    // end of field value
+                    // drag delete
+                    &-drag-delete{
+                        width: 38px;
+                        display: block;
+                        pointer-events: none;
+                        margin-left: 10px;
+                        font-size: 0;
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        @include transform(translateY(-50%));
+                        span{
+                            width: 14px;
+                            height: 14px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: auto 14px;
+                            margin-right: 10px;
+                            opacity: 0;
+                            @include transition(all 0.3s linear);
+                            @include transform(translateX(50px));
+                            &:hover{
+                                opacity: 1;
+                            }
+                            &:last-of-type{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    // end of drag delete
+                }
+                &:hover{
+                    background-color: $alice-blue;
+                    &.field{
+                        &-script, &-transfer,&-instruction{
+                            &:before{
+                                background-color: $alice-blue;
+                            }
+                        }
+                    }
+                }
+                &.selected{
+                    background-color: $alice-blue;
+                    border-color: rgba($midnight, 0.1);
+                    &.field{
+                        &-script, &-transfer,&-instruction{
+                            &:before{
+                                background-color: $alice-blue;
+                            }
+                        }
+                    }
+                    .field-drag-delete{
+                        pointer-events: all;
+                        span{
+                            opacity: 0.7;
+                            @include transform(translateX(0));
+                            &:hover{
+                                opacity: 1;
+                            }
+                            &.icon-drag{
+                                cursor: move;
+                            }
+                        }
+                    }
+                }
+            }
+            &>ul{
+                &>li{
+                    padding-left: 30px;
+                    position: relative;
+                    &>div{
+                        padding: 5px 10px;
+                        border: 1px dashed transparent;
+                        cursor: pointer;
+                        position: relative;
+                        overflow: hidden;
+                        @include border-radius(5px);
+                        @include transition(all 0.3s linear);
+                        &:hover{
+                            background-color: $alice-blue;
+                        }
+                    }
+                    ul{
+                        li{
+                            padding: 5px 10px;
+                            border: 1px dashed transparent;
+                            cursor: pointer;
+                            position: relative;
+                            overflow: hidden;
+                            @include border-radius(5px);
+                            @include transition(all 0.3s linear);
+                        }
+                    }
+                }
+                &.expanded{
+                    &>.btn-decision{
+                        background-image: url("../images/icon-minus.svg");
+                        background-size: 9px 2px;
+                    }
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: calc(100% - 20px);
+                        background-color: $gainsboro;
+                        position: absolute;
+                        left: 20px;
+                        top: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .decision-tree-head{
+        padding: 0 0 0 20px;
+        position: relative;
+        &>div{
+            padding: 5px 10px;
+            border: 1px dashed transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            @include border-radius(5px);
+            @include transition(all 0.3s linear);
+            &:hover{
+                background-color: $alice-blue;
+            }
+        }
+        &:hover{
+            background-color: transparent;
+        }
+    }
+    .collapsed{
+        &>ul{
+            display: none;
+        }
+    }
+    .expanded{
+        &>.btn-decision{
+            background-image: url("../images/icon-minus.svg");
+            background-size: 9px 2px;
+        }
+        &:before{
+            content: "";
+            display: block;
+            width: 1px;
+            height: calc(100% - 20px);
+            background-color: $gainsboro;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        &>ul{
+            display: block;
+        }
+    }
+}

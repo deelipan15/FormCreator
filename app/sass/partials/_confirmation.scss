@@ -1,0 +1,54 @@
+.confirmation-container{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 15px 20px 20px;
+    background-color: $white;
+    z-index: 5;
+    @include border-radius(5px);
+    @include transform(translate(-50%, -50%));
+    // confirmation container header
+    &-header{
+        // padding-bottom: 10px;
+        // border-bottom: 1px solid rgba($midnight, 0.1);
+        h2{
+            color: $midnight;
+            float: left;
+        }
+        i{
+            width: 14px;
+            height: 14px;
+            float: right;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 14px 14px;
+            cursor: pointer;
+            margin-top: 3px;
+            opacity: 0.7;
+            @include transition(opacity 0.3s linear);
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    // end of confirmation container header
+    // confirmation container content
+    &-content{
+        margin: 15px 0 0;
+        p{
+            font-size: 14px;
+            color: rgba($midnight, 0.7);
+        }
+        div{
+            text-align: right;
+            margin: 15px 0 0;
+            button{
+                padding: 7px 12px 8px 10px;
+                margin-left: 15px;
+            }
+        }
+    }
+    // end of confirmation container content
+}

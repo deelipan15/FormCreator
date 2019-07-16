@@ -1,0 +1,126 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 70px;
+    width: calc(100vw - 70px);
+    height: 70px;
+    background-color: $white;
+    padding: 16px 20px 15px;
+    z-index: 1;
+    @include box-shadow(0 0 4px 0 rgba(43, 51, 61, 0.1));
+    &>img{
+        width: 175px;
+        height: 25px;
+        float: left;
+        max-height: 39px;
+        max-width: auto;
+    }
+    .header-container-right{
+        float: right;
+        font-size: 0;
+        &>div{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0;
+            margin-left: 20px;
+            label{
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+                color: $midnight;
+                opacity: 0.5;
+                margin-right: 5px;
+            }
+            &>span{
+                font-size: 14px; 
+                color: $midnight;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .dropdown{
+                a{
+                    width: 130px;
+                }
+            }
+            button{
+                width: 80px;
+                padding: 10px 20px;
+                border-color: $gainsboro;
+            }
+            &.options-header{
+                font-size: 0;
+                a{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 16px;
+                    height: 16px;
+                    opacity: 0.7;
+                    cursor: pointer;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    margin-right: 15px;
+                    position: relative;
+                    @include transition(all 0.3s linear);
+                    &:before{
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: calc(100% + 5px);
+                        left: 50%;
+                        opacity: 0;
+                        pointer-events: none;
+                        border-bottom: 4px solid $midnight;
+                        border-left: 4px solid transparent;
+                        border-right: 4px solid transparent;
+                        z-index: 1;
+                        @include transform(translate(-50%, -5px));
+                        @include transition(all 0.3s linear);
+                    }
+                    &:after{
+                        content: "";
+                        font-size: 10px;
+                        color: $white;
+                        display: block;
+                        position: absolute;
+                        top: calc(100% + 9px);
+                        left: 50%;
+                        opacity: 0;
+                        pointer-events: none;
+                        padding: 5px 10px;
+                        background-color: $midnight;
+                        z-index: 1;
+                        width: max-content;
+                        @include transform(translate(-50%, -5px));
+                        @include transition(all 0.3s linear);
+                        @include border-radius(3px);
+                    }
+                    &:hover{
+                        opacity: 1;
+                        &:before, &:after{
+                            opacity: 1;
+                            @include transform(translate(-50% , 0));
+                        }
+                    }
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                    &.icon-search{
+                        &:after{
+                            content: "Universal Search";
+                        }
+                    }
+                    &.icon-notifications{
+                        &:after{
+                            content: "Notifications";
+                        }
+                    }
+                    &.icon-more-options{
+                        &:after{
+                            content: "Options";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

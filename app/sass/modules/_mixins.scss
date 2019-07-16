@@ -1,0 +1,245 @@
+// border radius
+//
+// USAGE:
+// @include border-radius(4px)
+//
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// box shadow
+//
+// USAGE:
+// @include box-shadow(0 0 20px 0 rgba(255,255,255,.1))
+//
+@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+// background clip
+//
+// USAGE:
+// @include clip($clip);
+//
+@mixin clip($clip) {
+  -webkit-background-clip: $clip;
+  -moz-background-clip: $clip;
+  -o-background-clip: $clip;
+  background-clip: $clip;
+}
+
+// transform
+//
+// USAGE:
+// @include transform(translate(10px, 10px));
+//
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// transition
+//
+// USAGE:
+// @include transition(translate(10px, 10px));
+//
+@mixin transition($values...) {
+  -moz-transition: $values;
+  -ms-transition: $values;
+  -o-transition: $values;
+  -webkit-transition: $values;
+  transition: $values;
+}
+
+// retina image
+//
+// USAGE:
+// @include background-image-retina('/images/icons/sidebar/icon-add-hover', png, 12px, 12px)
+//
+@mixin background-image-retina($file, $type, $width, $height) {
+  background-image: url($file+"."+$type);
+  -webkit-background-size: $width $height;
+  -moz-background-size: $width $height;
+  -o-background-size: $width $height;
+  background-size: $width $height;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    & {
+      background-image: url($file+"@2x."+$type);
+    }
+  }
+}
+
+// background gradient: top to bottom
+//
+// USAGE:
+// @include bg-gradient-t2b(start colour, end colour);
+//
+@mixin bg-gradient-t2b($start-colour, $end-colour) {
+  //background-color: $start-colour;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from($start-colour),
+    to($end-colour)
+  );
+  background-image: -webkit-linear-gradient(top, $start-colour, $end-colour);
+  background-image: -moz-linear-gradient(top, $start-colour, $end-colour);
+  background-image: -ms-linear-gradient(top, $start-colour, $end-colour);
+  background-image: -o-linear-gradient(top, $start-colour, $end-colour);
+  background-image: linear-gradient(to bottom, $start-colour, $end-colour);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
+// background gradient: left to right
+//
+// USAGE:
+// @include bg-gradient-l2r(start colour, end colour);
+//
+@mixin bg-gradient-l2r($start-colour, $end-colour) {
+  //background-color: $start-colour;
+  background-image: -webkit-gradient(
+    linear,
+    left,
+    right,
+    from($start-colour),
+    to($end-colour)
+  );
+  background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -moz-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -ms-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -o-linear-gradient(left, $start-colour, $end-colour);
+  background-image: linear-gradient(to right, $start-colour, $end-colour);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+}
+
+// word wrap
+//
+// USAGE:
+// @include white-space(pre-wrap);
+//
+@mixin white-space($type) {
+  white-space: $type; /* css-3 */
+  white-space: -moz-$type; /* Mozilla, since 1999 */
+  white-space: -$type; /* Opera 4-6 */
+  white-space: -o-$type; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+// text-overflow
+//
+// USAGE:
+// @include text-overflow(ellipsis);
+//
+@mixin text-overflow($type) {
+  -ms-text-overflow: $type;
+  -o-text-overflow: $type;
+  text-overflow: $type;
+}
+
+// placeholder for input fields & text areas
+//
+// USAGE:
+// @include white-space(pre-wrap);
+//
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    @content;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// placeholder for input fields & text areas
+@mixin placeholder-focus {
+  &:focus::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:focus:-moz-placeholder {
+    /* Firefox 18- */
+    @content;
+  }
+
+  &:focus::-moz-placeholder {
+    /* Firefox 19+ */
+    @content;
+  }
+
+  &:focus:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// Animations
+// resource link https://www.mrpapercut.com/detail/34_keyframe_animations_in_sass
+// resource link http://joshbroton.com/quick-fix-sass-mixins-for-css-keyframe-animations/
+// Usage
+// @include keyframes(move-the-object) {
+//  0%   { left: 100px; }
+//  100% { left: 200px; }
+//}
+
+// @mixin move-the-object {
+//  @include animate(move-the-object, 0.6s, infinite, normal);
+//} */
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-iteration-count: $iteration;
+  -moz-animation-iteration-count: $iteration;
+  -o-animation-iteration-count: $iteration;
+  animation-iteration-count: $iteration;
+  -webkit-animation-name: $name;
+  -moz-animation-name: $name;
+  -o-animation-name: $name;
+  animation-name: $name;
+  -webkit-animation-direction: $direction;
+  -moz-animation-direction: $direction;
+  -o-animation-direction: $direction;
+  animation-direction: $direction;
+}

@@ -1,0 +1,60 @@
+.alert{
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    width: 220px;
+    position: fixed;
+    top: 185px;
+    right: 40px;
+    padding: 5px 10px 5px 50px;
+    background-color: $white;
+    background-position: center left 13px;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    overflow: hidden;
+    @include border-radius(5px);
+    @include box-shadow(0 0 4px 0 rgba($midnight, 0.3));
+    @include transform(translateX(300px));
+    @include transition(all 0.3s linear);
+    p{
+        font-size: 10px;
+        font-weight: 400;
+        color: $midnight;
+    }
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+    }
+    &.alert-success{
+        background-image: url('../images/icon-alert-success.svg');
+        &:before{
+            background-color: $de-york;
+        }
+    }
+    &.alert-warning{
+        background-image: url('../images/icon-alert-warning.svg');
+        &:before{
+            background-color: $tangerine-yellow;
+        }
+    }
+    &.alert-info{
+        background-image: url('../images/icon-alert-info.svg');
+        &:before{
+            background-color: $royal-blue;
+        }
+    }
+    &.alert-danger{
+        background-image: url('../images/icon-alert-danger.svg');
+        &:before{
+            background-color: $torch-red;
+        }
+    }
+    &.show{
+        @include transform(translateX(0));
+    }
+}

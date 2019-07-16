@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="41px" viewBox="0 0 42 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>FC-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#495064" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="6.11111111" y="6.06410256" width="27.7777778" height="27.5641026" rx="5"></rect>
+        <filter x="-21.6%" y="-18.1%" width="136.0%" height="136.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-1" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.254901961   0 0 0 0 0.325490196   0 0 0 0 0.71372549  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="experiment" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="initial-copy-6" transform="translate(-13.000000, -13.000000)">
+            <g id="sidebar">
+                <g id="Fc-logo">
+                    <g id="FC-logo" transform="translate(15.000000, 13.000000)">
+                        <rect id="R2-Copy" fill="url(#linearGradient-1)" transform="translate(20.000000, 23.153846) rotate(-50.000000) translate(-20.000000, -23.153846) " x="6.11111111" y="9.37179487" width="27.7777778" height="27.5641026" rx="5"></rect>
+                        <g id="R1-Copy" transform="translate(20.000000, 19.846154) rotate(-50.000000) translate(-20.000000, -19.846154) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Group-Copy-2" transform="translate(20.000000, 20.673077) rotate(-50.000000) translate(-20.000000, -20.673077) translate(11.666667, 13.782051)" fill="#2B333D">
+                            <rect id="Rectangle" x="0" y="0" width="16.6666667" height="2.75641026" rx="1.37820513"></rect>
+                            <rect id="Rectangle-Copy" x="0" y="5.51282051" width="12.7777778" height="2.75641026" rx="1.37820513"></rect>
+                            <rect id="Rectangle-Copy-3" x="0" y="11.025641" width="6.11111111" height="2.75641026" rx="1.37820513"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

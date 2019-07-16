@@ -1,0 +1,226 @@
+.icon{
+    &-forms{
+        background-image: url('../images/icon-forms.svg');
+        background-size: 16p 19px;
+    }
+    &-scenarios{
+        background-image: url('../images/icon-scenarios.svg');
+        background-size: 16px 19px;
+    }
+    &-staffs{
+        background-image: url('../images/icon-staffs.svg');
+        background-size: 20px 21px;
+    }
+    &-details{
+        background-image: url('../images/icon-details.svg');
+        background-size: 18px 21px;
+    }
+    &-feedbacks{
+        background-image: url('../images/icon-feedbacks.svg');
+        background-size: 20px 18px;
+    }
+    &-external-links{
+        background-image: url('../images/icon-external-links.svg');
+        background-size: 20px 15px;
+    }
+    &-online-peers{
+        background-image: url('../images/icon-online-peers.svg');
+        background-size: 25px 18px;
+    }
+    &-search{
+        background-image: url('../images/icon-search.svg');
+        background-size: 16px 16px;
+    }
+    &-notifications{
+        background-image: url('../images/icon-notifications.svg');
+        background-size: 16px 14px;
+    }
+    &-more-options{
+        background-image: url('../images/icon-more-options.svg');
+        background-size: 15px 13px;
+    }
+    &-plus{
+        background-image: url('../images/icon-plus.svg');
+        background-size: 13px 13px;
+    }
+    &-minus{
+        background-image: url('../images/icon-minus.svg');
+        background-size: 13px 3px;
+    }
+    &-acc{
+        background-image: url('../images/icon-acc.svg');
+    }
+    &-calendar{
+        background-image: url('../images/icon-calendar.svg');
+    }
+    &-link{
+        background-image: url('../images/icon-link.svg');
+    }
+    &-intersection{
+        background-image: url('../images/icon-intersection.svg');
+    }
+    &-decision-arrow{
+        background-image: url('../images/icon-decision-arrow.svg');
+    }
+    &-download{
+        background-image: url('../images/icon-download.svg');
+        background-size: 16px 14px;
+    }
+    &-third-party{
+        background-image: url('../images/icon-third-party.svg');
+        background-size: 16px 14px;
+    }
+    &-close{
+        background-image: url('../images/icon-close.svg');
+    }
+    &-arrow-left{
+        background-image: url('../images/icon-arrow-left.svg');
+    }
+    // add fields icons
+    &-field-name, &-field-firstname, &-field-lastname{
+        background-image: url('../images/icon-field-name.svg');
+    }
+    &-field-phone{
+        background-image: url('../images/icon-field-phone.svg');
+    }
+    &-field-email{
+        background-image: url('../images/icon-field-email.svg');
+    }
+    &-field-decision{
+        background-image: url('../images/icon-field-decision.svg');
+    }
+    &-field-message{
+        background-image: url('../images/icon-field-message.svg');
+    }
+    &-field-script{
+        background-image: url('../images/icon-field-script.svg');
+    }
+    &-field-company{
+        background-image: url('../images/icon-field-company.svg');
+    }
+    &-field-website{
+        background-image: url('../images/icon-field-website.svg');
+    }
+    &-field-finish{
+        background-image: url('../images/icon-field-finish.svg');
+    }
+    &-field-single{
+        background-image: url('../images/icon-field-single.svg');
+    }
+    &-field-date{
+        background-image: url('../images/icon-field-date.svg');
+    }
+    &-field-city{
+        background-image: url('../images/icon-field-city.svg');
+    }
+    &-field-oncall{
+        background-image: url('../images/icon-field-oncall.svg');
+    }
+    &-field-transfer{
+        background-image: url('../images/icon-field-transfer.svg');
+    }
+    &-field-repeat{
+        background-image: url('../images/icon-field-repeat.svg');
+    }
+    &-field-dropdown{
+        background-image: url('../images/icon-field-dropdown.svg');
+    }
+    &-field-paragraph{
+        background-image: url('../images/icon-field-paragraph.svg');
+    }
+    &-field-instruction{
+        background-image: url('../images/icon-field-instruction.svg');
+    }
+    &-field-postal{
+        background-image: url('../images/icon-field-postal.svg');
+    }
+    &-field-state{
+        background-image: url('../images/icon-field-state.svg');
+    }
+    &-field-address{
+        background-image: url('../images/icon-field-address.svg');
+    }
+    &-field-iframe{
+        background-image: url('../images/icon-field-iframe.svg');
+    }
+    &-field-appointment{
+        background-image: url('../images/icon-field-appointment.svg');
+    }
+    &-field-time{
+        background-image: url('../images/icon-field-time.svg');
+    }
+    &-field-country{
+        background-image: url('../images/icon-field-country.svg');
+    }
+    &-field-status{
+        background-image: url('../images/icon-field-status.svg');
+    }
+    &-field-multiple{
+        background-image: url('../images/icon-field-multiple.svg');
+    }
+    &-field-hidden{
+        background-image: url('../images/icon-field-hidden.svg');
+    }
+    &-field-order{
+        background-image: url('../images/icon-field-order.svg');
+    }
+    &-field-faq{
+        background-image: url('../images/icon-field-faq.svg');
+    }
+    &-field-department{
+        background-image: url('../images/icon-field-department.svg');
+    }
+    &-field-webchat{
+        background-image: url('../images/icon-field-webchat.svg');
+    }
+    &-field-else{
+        background-image: url('../images/icon-field-else.svg');
+    }
+    &-field-patch{
+        background-image: url('../images/icon-field-patch.svg');
+    }
+    &-field-relay{
+        background-image: url('../images/icon-field-relay.svg');
+    }
+    &-field-form{
+        background-image: url('../images/icon-field-form.svg');
+    }
+    // end of add fields icons
+    // forms tools
+    &-undo{
+        background-image: url('../images/icon-undo.svg');
+    }
+    &-redo{
+        background-image: url('../images/icon-redo.svg');
+    }
+    &-cut{
+        background-image: url('../images/icon-cut.svg');
+    }
+    &-copy{
+        background-image: url('../images/icon-copy.svg');
+    }
+    &-paste{
+        background-image: url('../images/icon-paste.svg');
+    }
+    &-trash{
+        background-image: url('../images/icon-trash.svg');
+    }
+    &-expand{
+        background-image: url('../images/icon-expand.svg');
+    }
+    &-drag{
+        background-image: url('../images/icon-drag.svg');
+    }
+    // end of forms tools
+    // forms content
+    &-phone-blue{
+        background-image: url('../images/icon-phone-blue.svg');
+    }
+    &-dropdown{
+        background-image: url('../images/icon-dropdown.svg');
+    }
+    &-url{
+        background-image: url('../images/icon-url.svg');
+    }
+    // end of forms content
+}
